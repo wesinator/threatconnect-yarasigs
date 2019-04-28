@@ -11,5 +11,5 @@ strings:
     $qbp = "QBP//"
     $strcmd = "dmd /c"
 condition:
-    ($aabb and $strcmd) or ($qbp and $strcmd)
+    $strcmd and ($qbp or $aabb)
 }
